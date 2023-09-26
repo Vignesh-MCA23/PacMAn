@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box" style="height:500px;
+    position:relative;
+    border:1px solid black ;
+    background-color: rgba(0, 0, 0, 0.301);
+    height:300px;
+    margin-top:20px;"></div>
+<script>
+    var arr=[["./images/PacMan1.png","./images/PacMan2.png"],["./images/PacMan3.png","./images/PacMan4.png"]]
+    var img = document.createElement("img")
+    document.getElementById("box").appendChild(img);
+    var position=0;//starting position
+    var flag=0;//array of list2
+    var velocity=100;//spped which is gonna move
+    var direction=0;//array of list 1
+
+    function moving(){
+        img.src=arr[direction][flag];//begins with the index of [0,0]
+        if(direction===0){
+            position += velocity
+            console.log(position)
+        }
+        else{
+            position -= velocity;
+            console.log(position)
+        }
+        if(position>=screen.width || position<=0){
+            direction= 1-direction;
+        }
+         
+        img.style.left=position+"px";
+        flag= 1-flag;
+        img.style.width="100px";
+        img.style.height="100px";
+        img.style.position="absolute";     
+    }
+    setInterval(moving,100);
+</script>    
+</body>
+</html>
