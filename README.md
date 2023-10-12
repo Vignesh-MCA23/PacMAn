@@ -1,14 +1,17 @@
 # PacMAn
+Description:
 
-This HTML and JavaScript code creates a simple animation of Pac-Man moving horizontally within a designated "box" on a webpage. The key features of this code are:
- > It defines an HTML structure with a "box" div element where the Pac-Man animation will be displayed.
- > Two sets of Pac-Man images are stored in a two-dimensional array called arr. These images alternate to give the appearance of Pac-Man opening and closing its mouth as it moves.
- > JavaScript is used to create an img element, append it to the "box" div, and control the animation. 
- > Pac-Man's position is updated based on the direction and velocity, and the direction is reversed when Pac-Man reaches the edge of the screen.
- > The Pac-Man image is updated in the "box" div, and its position and styling are adjusted within the moving function.
- > The animation runs at a rate of 10 frames per second (100 milliseconds) using setInterval.   
-In summary, this code creates a simple Pac-Man animation that moves horizontally within a defined box on the webpage, giving the illusion of Pac-Man chomping as it changes direction.
+This HTML page features a Pac-Man animation moving horizontally within a container, controlled by JavaScript for direction, mouth animation, and boundary reversal, with a continuous animation loop triggered by setInterval every 100 milliseconds.
 
+How to run the code:
+
+step1:Save the HTML file with .html extension.
+
+step2:Click the "Go Live" button.A new browser window will open, displaying Pacman animation.
+
+Future Improvemennt:
+
+Consider adding obstacles or interactive elements within the container for Pac-Man to interact with, adding sound effects, or incorporating user controls for changing Pac-Man's direction and speed,enhancing the overall user experience.
 
 
 
